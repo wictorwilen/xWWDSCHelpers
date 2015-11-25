@@ -1,0 +1,9 @@
+[ClassVersion("1.0.0"), FriendlyName("xSqlAlias")] 
+class WW_SqlAlias : OMI_BaseResource
+{
+  [Key] string AliasName;
+  [Required] string SqlServerName;
+  [write] uint32 Port;
+  [write,ValueMap{"Present", "Absent"},Values{"Present", "Absent"}] string Ensure;
+ 
+};
